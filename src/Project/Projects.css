@@ -1,0 +1,53 @@
+/* Projects.css */
+.projects {
+    background-color: #180000;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.projects h1 {
+    font-size: 30px;
+    color: #fffcfc;
+    margin-bottom: 20px;
+}
+
+.projectList {
+    list-style: none;
+    padding: 0;
+}
+
+.projectItem {
+    background-color: #020f26;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.projectItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    background: #601e5b;
+}
+
+.projectTopic {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fffcfc;
+    margin-bottom: 5px;
+}
+
+.projectDescription {
+    font-size: 16px;
+    color: #fffcfc;
+    line-height: 1.5;
+}
+.projectDescription a{
+    color: #b62a2a;
+}

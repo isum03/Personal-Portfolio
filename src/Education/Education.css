@@ -1,0 +1,47 @@
+.educationContainer {
+  background-color: #020409;
+  padding: 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.educationTitle {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fffcfc;
+}
+
+.educationCard {
+  background-color: #020a1d;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border-width: 10px, 10px;
+  /*box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8); /* Strong red glow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.educationCard:hover {
+  transform: scale(1.05);
+}
+
+.educationCard h3 {
+  font-size: 18px;
+  color: #fffcfc;
+}
+  
+.educationCard h4 {
+  font-size: 16px;
+  color:#fffcfc;
+}
+  
+.educationCard p {
+  font-size: 14px;
+  color: #fffcfc;
+  margin-top: 5px;
+}
+  

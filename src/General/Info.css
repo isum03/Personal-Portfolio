@@ -1,0 +1,79 @@
+.personalInfo {
+  font-family: 'Arial', sans-serif;
+  padding: 40px;
+  text-align: center;
+  background-color: #020409;
+  border-radius: 10px;
+  border-color: palevioletred;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: auto;
+  max-width: 900px;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+.personalInfo h1 {
+  color: #fffcfc;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+  
+.profilePic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+  
+.profilePic:hover {
+  transform: scale(1.1); /* Make image slightly larger when hovered */
+}
+
+.personalInfo p {
+  font-size: 16px;
+  color: #fffcfc;
+  line-height: 1.5;
+  padding: 0 20px;
+  text-align: justify;
+  transition: color 0.3s ease;
+}
+  
+.personalInfo p:hover {
+  color: #444;
+}
+
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  background-color: #6a6c6d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin-top: 20px;
+}
+  
+.downloadBtn:hover {
+  background-color: #005bb5;
+}
+
+.downloadIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+  
