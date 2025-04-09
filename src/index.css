@@ -20,11 +20,11 @@ body {
     min-block-size: 100vh;
     place-content: center;
   }
-    */
+    *
     body {
         background: linear-gradient(135deg, #000000 30%, #180000 60%, #0A0A0A 90%);
         
-      }
+      }*/
        
 
   

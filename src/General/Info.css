@@ -1,79 +1,48 @@
-.personalInfo {
-  font-family: 'Arial', sans-serif;
-  padding: 40px;
-  text-align: center;
-  background-color: #020409;
-  border-radius: 10px;
-  border-color: palevioletred;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  margin: auto;
-  max-width: 900px;
-  animation: fadeIn 1s ease-in-out;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
- 
-.personalInfo h1 {
-  color: #fffcfc;
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-  
-.profilePic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease-in-out;
-}
-  
-.profilePic:hover {
-  transform: scale(1.1); /* Make image slightly larger when hovered */
-}
-
-.personalInfo p {
-  font-size: 16px;
-  color: #fffcfc;
-  line-height: 1.5;
-  padding: 0 20px;
-  text-align: justify;
-  transition: color 0.3s ease;
-}
-  
-.personalInfo p:hover {
-  color: #444;
-}
-
-.downloadBtn {
-  display: inline-flex;
+.infoPersonal{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  font-size: 16px;
-  background-color: #6a6c6d;
+  background: #0f111a;
   color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s;
-  margin-top: 20px;
+  padding: 60px 100px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
 }
-  
-.downloadBtn:hover {
-  background-color: #005bb5;
+.infoContent{
+  max-width: 50%;
 }
-
-.downloadIcon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+.infoContent h1{
+  font-size: 4rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
-  
+.infoContent p{
+  font-size: 1.8rem;
+}
+.infoText{
+  background: linear-gradient(to right, #ff4ecd, #9f71ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.highlight {
+  color: #639aff;
+}
+.infoDownload{
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: linear-gradient(to right, #3a6c70, #0f090c);
+  color: white;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 47, 197, 0.3);
+}
+.infoDownload:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(255, 47, 197, 0.5);
+}
+.infoPhoto img{
+  max-height: 600px;
+  object-fit: cover;
+}

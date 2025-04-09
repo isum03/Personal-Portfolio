@@ -1,47 +1,64 @@
 .educationContainer {
-  background-color: #020409;
-  padding: 20px;
-  max-width: 900px;
-  margin: 30px auto;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-  
-.educationTitle {
+  background-color: #0f111a;
+  color: white;
+  padding: 3rem 1rem;
   text-align: center;
-  font-size: 28px;
+}
+.educationTitle{
+  font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
-  color: #fffcfc;
+  margin-bottom: 3rem;
 }
-
-.educationCard {
-  background-color: #020a1d;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  border-width: 10px, 10px;
-  /*box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8); /* Strong red glow */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+.eduCard{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
-
-.educationCard:hover {
-  transform: scale(1.05);
+.eduCard::before{
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 120px;
+  width: 80%;
+  height: 4px;
+  background: #f7f7f8;
+  z-index: 0;
 }
-
-.educationCard h3 {
-  font-size: 18px;
-  color: #fffcfc;
+.eduItems{
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 16px;
 }
-  
-.educationCard h4 {
-  font-size: 16px;
-  color:#fffcfc;
+.eduCircle{
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+  border-radius: 50%;
+  margin: 0 auto 0.5rem;
+  position: relative;
+  z-index: 2;
 }
-  
-.educationCard p {
-  font-size: 14px;
-  color: #fffcfc;
-  margin-top: 5px;
+.eduYear{
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
-  
+.eduTitle{
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.eduSubtitle{
+  font-size: 1rem;
+  color: #ffffff;
+}
+.eduDesc{
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #cbd5e1;
+}

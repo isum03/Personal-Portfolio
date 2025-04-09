@@ -1,51 +1,43 @@
-
-.skills {
-  background-color: #020409;
-  padding: 50px 20px;
+.techContainer{
+  background: #0f111a;
+  padding: 2.5rem 1rem;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
-  margin: 30px auto;
 }
-
-.skills h1 {
-  font-size: 30px;
-  color: #fffcfc;
-  margin-bottom: 20px;
+.techTitle{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: azure;
 }
-
-.skillLogos {
+.techDisplay{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+}
+@media (min-width: 640px) {
+  .techDisplay {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .techDisplay {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+.techCard{
+  background-color: #3e3d3d;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 6rem;
+  height: 6rem;
+  display: flex;
   align-items: center;
-  margin-top: 20px;
-  margin-left: 30px;
+  justify-content: center;
 }
-
-.skillLogos img {
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skillLogos img:hover {
-  transform: scale(1.2);
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-  .skillLogos {
-      grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .skillLogos {
-      grid-template-columns: repeat(2, 1fr);
-  }
+.techLogo{
+  max-width: 100%;
+  max-height: 100%;
 }

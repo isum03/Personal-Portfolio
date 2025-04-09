@@ -1,41 +1,37 @@
 import React, { Component } from "react";
-import pythonLogo from "./pythonLogo.png";
-import javaLogo from "./javaLogo.png";
-import htmlLogo from "./htmlLogo.png";
-import cssLogo from "./cssLogo.png";
-import javascriptLogo from "./javascriptLogo.png";
-import reactLogo from "./react.png";
-import cLogo from "./cLogo.png";
-import cplusLogo from "./cplusLogo.png";
-import csharpLogo from "./csharpLogo.png";
-import nodejsLogo from "./nodejsLogo.png";
-import springbootLogo from "./springbootLogo.png";
-import reactNativeLogo from "./reactNative.png";
-import phpLogo from "./php.png";
-import "./Skills.css"; // Import CSS file
 
+import "./skills.css"; // Import CSS file
+const techList = [
+  {name: "React", src:"./assets/skills/reactLogo.png"},
+  {name: "React Native", src:"./assets/skills/reactNativeLogo.png"},
+  {name: "HTML", src: "./assets/skills/htmlLogo.png"},
+  {name: "CSS", src: "./assets/skills/cssLogo.png"},  
+  {name: "JavaScript", src:"./assets/skills/javascriptLogo.png"},
+  {name: "Python", src:"./assets/skills/pythonLogo.png"},
+  {name: "Java", src:"./assets/skills/javaLogo.png"},  
+  {name: "C", src:"./assets/skills/cLogo.png"},
+  {name: "C++", src:"./assets/skills/cplusLogo.png"},
+  {name: "C#", src:"./assets/skills/csharpLogo.png"},
+  {name: "Node.js", src:"./assets/skills/nodejsLogo.png"},
+  {name: "Spring Boot", src:"./assets/skills/springbootLogo.png"},
+  {name: "PHP", src:"./assets/skills/php.png"},
+  {name: "MySQL", src:"./assets/skills/mysqlLogo.png"},
+  {name: "MongoDB", src:"./assets/skills/mongodbLogo.png"},
+ 
+
+]
 class Skills extends Component {
   render() {
     return (
-      <div className="skills">
-        <section id="skills">
-        <h1>Skills</h1>
-        <div className="skillLogos">
-          <img src={pythonLogo} alt="Python Logo" className="skill-icon" />
-          <img src={javaLogo} alt="Java Logo" className="skill-icon" />
-          <img src={htmlLogo} alt="HTML Logo" className="skill-icon" />
-          <img src={cssLogo} alt="CSS Logo" className="skill-icon" />
-          <img src={javascriptLogo} alt="JavaScript Logo" className="skill-icon" />
-          <img src={reactLogo} alt="React Logo" className="skill-icon" />
-          <img src={cLogo} alt="C Logo" className="skill-icon" />
-          <img src={cplusLogo} alt="C++ Logo" className="skill-icon" />
-          <img src={csharpLogo} alt="C# Logo" className="skill-icon" />
-          <img src={nodejsLogo} alt="Node.js Logo" className="skill-icon" />
-          <img src={springbootLogo} alt="Spring Boot Logo" className="skill-icon" />
-          <img src={reactNativeLogo} alt="React Native Logo" className="skill-icon" />
-          <img src={phpLogo} alt="PHP Logo" className="skill-icon" />
+      <div className="techContainer">
+        <h1 className="techTitle">Technology Stack</h1>
+        <div className="techDisplay">
+          {techList.map((tech) => (
+            <div key={tech.name} className="techCard">
+              <img src={tech.src} alt={tech.name} className="techLogo" />
+            </div>
+          ))}
         </div>
-        </section>
       </div>
     );
   }

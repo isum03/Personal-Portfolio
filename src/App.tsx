@@ -1,14 +1,5 @@
-// filepath: g:/Courses/React/profile-app/src/App.tsx
 import React from "react";
-import "./General/Info.css";
-import "./Skills/Skills.css";
-import "./Education/Education.css";
-import "./Certificate/Certifications.css";
-import "./Project/Projects.css";
-import "./Club/Clubs.css";
-import "./Headers & footer/Header.css";
-import "./index.css";
-import "./Contacts/Contact.css";
+
 
 import Info from "./General/Info";
 import Education from "./Education/Education";
@@ -28,11 +19,8 @@ const App = () => {
       <Header />
       <Info />
       <Education />
-      <Certificates />
-      <Skills />
-      <Clubs />
       <Projects />
-      <Contact />
+      <Skills />
       <Footer />
     </div>
   );

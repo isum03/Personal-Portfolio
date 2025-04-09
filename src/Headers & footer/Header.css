@@ -3,11 +3,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #111316; /* Dark background */
+    background-color: #111316; 
     color: white;
 }
 
-/* Navigation bar styles */
+
 .navbar {
     display: flex;
     gap: 2rem;
@@ -22,7 +22,6 @@
     font-size: 16px;
 }
 
-/* Underline effect on hover */
 .navbar a::after {
     content: '';
     position: absolute;
@@ -30,13 +29,13 @@
     left: 0;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, #a855f7, #3b82f6); /* Purple to Blue */
+    background: linear-gradient(90deg, #a855f7, #3b82f6); 
     border-radius: 3px;
     transition: width 0.3s ease-in-out;
 }
 
 .navbar a:hover {
-    color: #a855f7; /* Light purple */
+    color: #a855f7; 
 }
 
 .navbar a:hover::after,
@@ -44,7 +43,7 @@
     width: 100%;
 }
 
-/* Social Icons */
+
 .socialIcons {
     display: flex;
     gap: 1.5rem;
@@ -61,20 +60,20 @@
     transform: scale(1.1);
 }
 
-/* Icon specific colors */
+
 .instaIcon:hover {
-    color: #E1306C; /* Instagram Pink */
+    color: #E1306C; 
 }
 
 .linkedinIcon:hover {
-    color: #0A66C2; /* LinkedIn Blue */
+    color: #0A66C2;
 }
 
 .gitIcon:hover {
-    color: #F1502F; /* GitHub Red */
+    color: #F1502F;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .navigationBar {
         flex-direction: column;
@@ -91,3 +90,17 @@
         margin-top: 10px;
     }
 }
+footer {
+    background-color: #0f111a; 
+    color: white;
+    padding: 2.5rem;
+    margin-top: auto;
+    text-align: center;
+    font-size: 1.1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+  
+footer p {
+    margin: 0;
+}
+  
