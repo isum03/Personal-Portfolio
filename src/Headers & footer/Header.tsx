@@ -15,7 +15,7 @@ const Header = () => {
           <a href="#Contact" >Contact</a>
         </nav>
       <div className="socialIcons">
-        <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/_isum_hansaja_/" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="instaIcon" />
         </a>
         <a href="https://www.linkedin.com/in/isum-perera-5000a8286/" target="_blank" rel="noopener noreferrer">
