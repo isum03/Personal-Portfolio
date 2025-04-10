@@ -2,36 +2,35 @@ import React, { Component } from "react";
 import "./Education.css"; // Import the CSS file
 const eduDetails = [
   {
-    year : "2009 - 2022",
-    title: "Maliyadeva College",
-    description: "G.C.E. Advanced Level 2022 - Physical Science Stream - BBC",
+    title: "University of Westminster",
+    startDate: "2023",
+    endDate: "2027",
+    description: "BEng (Hons) Software Engineering"
   },
   {
-  year : "2023 - 2027",
-  title: "University Of Westminster",
-  subTitle: "BEng (Hons) Software Engineering",  
-  description: "Successfully completing the required credits in the degree program while gaining comprehensive knowledge in front-end and back-end programming, database management, and algorithmic problem-solving, with a focus on industry-relevant technologies.",
+    title : "Maliyadeva College",
+    startDate: "2009",
+    endDate: "2022",
+    description: "G.C.E. A/L 2022 - Physical Science Stream - BBC"
   }
 ]
 class Education extends Component {
   render() {
     return (
-      <div className="educationContainer">
-        <h1 className="educationTitle">Education</h1>
-        <div className="eduCard">
-          {eduDetails.map((item, index) => (
-            <div key={index} className="eduItems">
-              <div className="eduCircle" />
-              <div className="eduYear">{item.year}</div>
-              <div className="eduTitle">{item.title}</div>
-              <div className="eduSubtitle">{item.subTitle}</div>
-              <div className="eduDesc">{item.description}</div>
+      <div id="edu" className="educationContainer">
+        <h1 className="eduTopic">Education</h1>
+        <div className="eduLine"></div>
+        {eduDetails.map((edu, index) => (
+          <div className="eduEntry" key={index}>
+            <div className="eduLineDot"></div>
+            <div className="eduCard">
+              <h3 className="eduTitle">{edu.title}</h3>
+              <p className="eduDate">{edu.startDate} - {edu.endDate}</p>
+              <p className="eduDesc">{edu.description}</p>
             </div>
-          ))}
+          </div>
+        ))}
       </div>
-        
-      </div>
-      
     );
   }
 }

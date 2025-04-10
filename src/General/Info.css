@@ -4,8 +4,8 @@
   align-items: center;
   background: #0f111a;
   color: white;
-  padding: 60px 100px;
-  min-height: 100vh;
+  padding: 25px 100px 200px 100px;
+  min-height: 100px;
   font-family: 'Segoe UI', sans-serif;
 }
 .infoContent{
@@ -28,6 +28,8 @@
   color: #639aff;
 }
 .infoDownload{
+  display: inline-block;
+  text-decoration: none; 
   padding: 12px 25px;
   border: none;
   border-radius: 8px;
@@ -37,12 +39,20 @@
   color: white;
   transition: 0.3s ease;
   box-shadow: 0 0 15px rgba(255, 47, 197, 0.3);
+  margin-top: 100px;
 }
 .infoDownload:hover{
   transform: translateY(-2px);
   box-shadow: 0 0 25px rgba(255, 47, 197, 0.5);
 }
-.infoPhoto img{
-  max-height: 600px;
+.myPhoto{
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
   object-fit: cover;
+  
+}
+.infoPhoto{
+  border-color: #ff4ecd;
+  border-width: 1rem;
 }

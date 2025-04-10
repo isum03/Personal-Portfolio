@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import "./contact.css";
 
 
 const Contact = () => {
@@ -10,7 +11,7 @@ const Contact = () => {
         <p>Feel free to reach out via the form below or connect on social platforms.</p>
 
         <form
-          action="https://formsubmit.co/isump10@gmail.com"
+          action="https://formsubmit.co/example@gmail.com"
           method="POST"
           className="contactForm"
         >
@@ -22,10 +23,10 @@ const Contact = () => {
 
         <div className="socialLinks">
           
-          <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/isum-perera-5000a8286/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="LikedinId" />
           </a>
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/isum03" target="_blank" rel="noopener noreferrer">
             <FaGithub className="GitIcon" />
           </a>
         </div>

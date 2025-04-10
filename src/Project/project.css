@@ -1,42 +1,54 @@
-.projectSection{
-    background-color: #0f111a;
-    color: white;
-    padding: 4rem 1rem;
-}
 .projectContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+    background-color: #111; 
+    padding: 20px;
+    margin-top: 50px;
+}
+.projectGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 1000px;
+}
+.projectTopic{
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 50px;
 }
 .projectCard{
-    background-color: #1e293b;
-    border: 1px solid #334155;
-    border-radius: 12px;
-    padding: 1.5rem;
-    max-width: 320px;
-    text-align: center;
+    background-color: #222; 
+    border-radius: 10px;
+    overflow: hidden; 
     transition: transform 0.3s ease;
+    border: 2px solid #555; 
+    border-color: rgb(52, 1, 56);
+    
 }
 .projectCard:hover{
     transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .projectImg{
     width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+    height: 200px;
+    object-fit: cover; 
+    display: block;
+}
+.projectContent{
+    padding: 20px;
 }
 .projectDesc{
-    font-size: 0.95rem;
-    color: #cbd5e1;
-    margin-bottom: 1.5rem;
+    color: #ccc; 
+    font-size: 0.9rem;
 }
-.projectLinks{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+.projectTitle{
+    color: #fff;
+    margin-bottom: 10px;
 }
+
 .btn{
     padding: 0.6rem 1.2rem;
     border-radius: 999px;
@@ -44,6 +56,7 @@
     font-size: 0.9rem;
     text-decoration: none;
     transition: all 0.3s ease;
+    margin-left: 20px;
 }
   
 .btn.outline {
@@ -54,9 +67,4 @@
   
 .btn:hover {
     opacity: 0.85;
-}
-.projectTopic{
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 3rem;
 }

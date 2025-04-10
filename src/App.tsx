@@ -21,7 +21,10 @@ const App = () => {
       <Education />
       <Projects />
       <Skills />
+      <Clubs />
+      <Contact />
       <Footer />
+      
     </div>
   );
 };

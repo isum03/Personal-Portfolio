@@ -1,30 +1,19 @@
-/*.mainContent {
-    background: linear-gradient(270deg, #230101, #13000a, #000000, #04012d);
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s ease infinite;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}*
 body {
-    background: linear-gradient(135deg, #000000, #04041d);
-    color: var(--color-text);
-    display: grid;
-    font-family: var(--font-family);
-    line-height: 1.5;
-    margin: 0;
-    min-block-size: 100vh;
-    place-content: center;
-  }
-    *
-    body {
-        background: linear-gradient(135deg, #000000 30%, #180000 60%, #0A0A0A 90%);
-        
-      }*/
-       
+  margin: 0;
+  padding: 0;
+  background: #0f111a;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
 
-  
+#root {
+  min-height: 100vh;
+  width: 100%;
+}

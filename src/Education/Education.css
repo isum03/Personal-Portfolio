@@ -1,64 +1,97 @@
 .educationContainer {
-  background-color: #0f111a;
-  color: white;
-  padding: 3rem 1rem;
-  text-align: center;
+  position: relative;
+  background-color: #0f111a; 
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.educationTitle{
+.eduTopic{
   font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 3rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 100px;
+}
+.eduLine{
+  position: absolute;
+  top: 130px;
+  bottom: 80px;
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 2px;
+  background-color: rgb(255, 0, 149);
+}
+.eduEntry{
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.eduLineDot{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: rgb(255, 0, 119);
+  border-radius: 50%;
+  z-index: 1;
 }
 .eduCard{
-  display: flex;
-  justify-content: space-between;
+  background-color: #222; 
+  border: 4px solid rgb(52, 1, 56); 
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 80px; 
+  color: #fff; 
+  width: 40%; 
+  box-sizing: border-box;
   position: relative;
-  max-width: 100%;
-  gap: 2rem;
-  flex-wrap: wrap;
 }
-.eduCard::before{
+.eduEntry:nth-child(even) .eduCard {
+  margin-left: 50%;
+  margin-right: 100px;
+}
+
+.eduEntry:nth-child(odd) .eduCard {
+  margin-right: 50%;
+  margin-left: 100px;
+}
+
+.eduCard::after {
   content: '';
   position: absolute;
-  top: 25px;
-  left: 120px;
-  width: 80%;
-  height: 4px;
-  background: #f7f7f8;
-  z-index: 0;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
 }
-.eduItems{
-  flex: 1 1 200px;
-  max-width: 250px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  margin-top: 16px;
+
+.eduEntry:nth-child(even) .eduCard::after {
+  left: -10px;
+  border-right: 10px solid #f03;
 }
-.eduCircle{
-  width: 25px;
-  height: 25px;
-  background: linear-gradient(to right, #7f00ff, #e100ff);
-  border-radius: 50%;
-  margin: 0 auto 0.5rem;
-  position: relative;
-  z-index: 2;
+
+.eduEntry:nth-child(odd) .eduCard::after {
+  right: -10px;
+  border-left: 10px solid #f03;
 }
-.eduYear{
-  font-weight: bold;
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
+
 .eduTitle{
-  font-size: 1.125rem;
-  margin-bottom: 0.5rem;
+  color: #639aff; 
+  margin-bottom: 5px;
 }
-.eduSubtitle{
-  font-size: 1rem;
-  color: #ffffff;
+.eduDate{
+  color: #639aff; 
+  font-size: 0.9rem;
+  margin-bottom: 10px;
 }
 .eduDesc{
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.4;
-  color: #cbd5e1;
 }
+
+

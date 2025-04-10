@@ -1,47 +1,54 @@
 .contactSection {
-    padding: 50px 20px;
+    background-color: #0f111a; 
+    padding: 40px 0; 
     text-align: center;
+
 }
 .contactContainer {
-    max-width: 900px;
-    margin: 0 auto;
-    background: #0A0A0A;
+    max-width: 800px; 
+    margin: 0 auto; 
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 .contactContainer h2 {
-    font-size: 28px;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
     margin-bottom: 10px;
-    color: #fffcfc;
 }
 .contactContainer p {
-    color: #fffcfc;
-    margin-bottom: 20px;
+    font-size: 1.1rem; 
+    color: #f2dfdf; 
+    margin-bottom: 30px; 
 }
 .contactForm {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; 
+    max-width: 500px; 
+    margin: 0 auto
 }
 .contactForm input,
 .contactForm textarea {
-    background-color: #1a0416;
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #1a0416;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 12px; 
+    margin-bottom: 20px;
+    border: 1px ; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    background-color: #89a0a2;
+}
+.contactForm textarea {
+    height: 150px;
+    resize: vertical;
 }
 
 .contactForm button {
-    background-color: #73a0d7;
-    color: #1a0416;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    background-color: #510c42; 
+    color: #fff;
+    padding: 12px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1.1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
 }
 
 .contactForm button:hover {
@@ -49,16 +56,30 @@
 }
 
 .socialLinks {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .socialLinks a {
-    margin: 0 10px;
-    color: #bf26c2;
-    text-decoration: none;
-    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0 15px;
+    color: #555; 
+    font-size: 2rem; 
+    transition: color 0.3s ease
 }
 
 .socialLinks a:hover {
-    text-decoration: underline;
+    color: #007bff;
+}
+.GitIcon:hover {
+    color: #F1502F;
+}
+.LikedinId :hover {
+    color: #007bff;
+}
+.LikedinId {
+    color: rgb(252, 252, 253)
+}
+
+.GitIcon {
+    color: rgb(247, 247, 247)
 }
