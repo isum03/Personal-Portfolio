@@ -68,13 +68,7 @@
 }
 
 .socialLinks a:hover {
-    color: #007bff;
-}
-.GitIcon:hover {
-    color: #F1502F;
-}
-.LikedinId :hover {
-    color: #007bff;
+    color: #d42439;
 }
 .LikedinId {
     color: rgb(252, 252, 253)

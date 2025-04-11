@@ -58,23 +58,9 @@
 }
 
 .socialIcons a:hover {
-    color: #d1d5db;
+    color: #d42439;
     transform: scale(1.1);
 }
-
-
-.instaIcon:hover {
-    color: #E1306C; 
-}
-
-.linkedinIcon:hover {
-    color: #0A66C2;
-}
-
-.gitIcon:hover {
-    color: #F1502F;
-}
-
 
 @media (max-width: 768px) {
     .navigationBar {

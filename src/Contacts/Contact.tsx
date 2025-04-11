@@ -1,9 +1,8 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import "./contact.css";
 
-
-const Contact = () => {
+const Contact: React.FC = () => {
   return (
     <section id="Contact" className="contactSection">
       <div className="contactContainer">
@@ -17,17 +16,22 @@ const Contact = () => {
         >
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message"  placeholder="Your Message" required></textarea>
+          <textarea name="message" placeholder="Your Message" required></textarea>
           <button type="submit">Send Message</button>
         </form>
 
         <div className="socialLinks">
-          
-          <a href="https://www.linkedin.com/in/isum-perera-5000a8286/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="LikedinId" />
+          <a href="https://www.linkedin.com/in/isum-perera-5000a8286/" 
+             target="_blank" 
+             rel="noopener noreferrer"
+          >
+            <FaLinkedin aria-label="LinkedIn Profile" />
           </a>
-          <a href="https://github.com/isum03" target="_blank" rel="noopener noreferrer">
-            <FaGithub className="GitIcon" />
+          <a href="https://github.com/isum03" 
+             target="_blank" 
+             rel="noopener noreferrer"
+          >
+            <FaGithub aria-label="GitHub Profile" />
           </a>
         </div>
       </div>

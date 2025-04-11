@@ -1,6 +1,4 @@
 import React from "react";
-
-
 import Info from "./General/Info";
 import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
