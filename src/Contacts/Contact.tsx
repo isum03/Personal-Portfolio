@@ -11,7 +11,7 @@ const Contact = () => {
         <p>Feel free to reach out via the form below or connect on social platforms.</p>
 
         <form
-          action="https://formsubmit.co/example@gmail.com"
+          action="https://formsubmit.co/isump10@gmail.com"
           method="POST"
           className="contactForm"
         >
