@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-
-import "./skills.css"; // Import CSS file
+import "./skills.css"; 
+//array of techList with details
 const techList = [
   {name: "React", src:"/src/assets/Skills/react.png"},
   {name: "React Native", src:"/src/assets/Skills/reactNative.png"},
@@ -20,8 +20,11 @@ class Skills extends Component {
   render() {
     return (
       <div id="skills" className="techContainer">
+        {/*Section title*/}
         <h1 className="techTitle">Technology Stack</h1>
+        {/*Grid layout for technology cards*/}
         <div className="techDisplay">
+          {/* Looping through each tech item and rendering a card with its logo */}
           {techList.map((tech) => (
             <div key={tech.name} className="techCard">
               <img src={tech.src} alt={tech.name} className="techLogo" />

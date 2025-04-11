@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import "./info.css";
-
+//class based componenet info
 class Info extends Component {
   render() {
     return (
       <div className="infoPersonal">
+        {/*Left side - personal information*/}
         <div id="myself" className="infoContent" >
           <h1>
+            {/*Highlight titles*/}
             <span className="infoText">Full Stack</span><br />
             <span className="infoText">Developer</span><br />
           </h1>
@@ -17,6 +19,7 @@ class Info extends Component {
             Download my resume
           </a>
         </div>
+        {/*photo section*/}
         <div className="infoPhoto">
           <img src="/src/assets/personal/myPhoto.jpg" alt="My Photo" className="myPhoto" />
         </div>

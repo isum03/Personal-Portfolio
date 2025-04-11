@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css"; 
-
+//functional component
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white p-4 mt-auto">

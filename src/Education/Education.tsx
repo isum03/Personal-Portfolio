@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import "./Education.css"; // Import the CSS file
+import "./education.css"; 
+//array containing education details
 const eduDetails = [
   {
     title: "University of Westminster",
@@ -14,15 +15,20 @@ const eduDetails = [
     description: "G.C.E. A/L 2022 - Physical Science Stream - BBC"
   }
 ]
+//class based component named "Education"
 class Education extends Component {
   render() {
     return (
       <div id="edu" className="educationContainer">
+        {/*Section heading*/}
         <h1 className="eduTopic">Education</h1>
+        {/*horizontal line*/}
         <div className="eduLine"></div>
+        {/*Looping through the eduDetails array to display each education entry*/}
         {eduDetails.map((edu, index) => (
           <div className="eduEntry" key={index}>
             <div className="eduLineDot"></div>
+            {/*Display education details*/}
             <div className="eduCard">
               <h3 className="eduTitle">{edu.title}</h3>
               <p className="eduDate">{edu.startDate} - {edu.endDate}</p>

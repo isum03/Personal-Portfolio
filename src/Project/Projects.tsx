@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./project.css";
-
+//array containing project details
 const projectDetails = [
   {
     title: "Financial CRM System",
@@ -36,15 +36,21 @@ const projectDetails = [
     description: "Developing an Web application aligning with United Nations Sustainable Development Goals",
   },
 ]
+//class based component named "Projects"
 class Projects extends Component {
   render() {
     return (
       <div id="project" className="projectContainer">
+        {/*Section title*/}
         <h1 className="projectTopic">Projects</h1>
+        {/*Grid layout for project cards*/}
         <div className="projectGrid">
+          {/* Loop through each project and render its details */}
           {projectDetails.map((project, index) => (
             <div key={index} className="projectCard">
+              {/*Display project image*/}
               <img src={project.image} alt={project.title} className="projectImg" />
+              {/*Display project details*/}
               <div className="projectContent">
                 <h2 className="projectTitle">{project.title}</h2>
                 <p className="projectDesc">{project.tech}</p>
@@ -60,7 +66,6 @@ class Projects extends Component {
           ))}
          </div> 
       </div>
-
     );
   }
 }
