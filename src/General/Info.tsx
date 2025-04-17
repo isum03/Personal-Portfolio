@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./info.css";
+import "./Info.css";
 //class based componenet info
 class Info extends Component {
   render() {
