@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./education.css"; 
+import "./Education.css"; 
 //array containing education details
 const eduDetails = [
   {

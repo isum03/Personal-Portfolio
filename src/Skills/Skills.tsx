@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./skills.css"; 
+import "./Skills.css"; 
 //array of techList with details
 const techList = [
   {name: "React", src:"/src/assets/Skills/react.png"},

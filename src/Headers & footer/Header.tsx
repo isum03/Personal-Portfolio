@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-import "./header.css";
+import "./Header.css";
 // Header is a functional component with type definition React function components
 const Header: React.FC = () => {
   return (
