@@ -5,7 +5,7 @@ import "./societies.css";
 import rota from "../assets/extra/Rot.jpeg";
 import tm from "../assets/extra/tm.png";
 import ieee from "../assets/extra/ieee.png";
-import mozillaLogo from "../assets/extra/mozilla.png";
+import mozillaLogo from "../assets/extra/Mozilla.png";
 
 // Array of societyData using imported image variables
 const societyData = [
