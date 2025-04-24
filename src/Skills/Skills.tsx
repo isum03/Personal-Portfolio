@@ -1,20 +1,35 @@
 import React, { Component } from "react";
 import "./Skills.css"; 
+
+import reactLogo from "../assets/Skills/react.png";
+import reactNativeLogo from "../assets/Skills/reactNative.png";
+import htmlLogo from "../assets/Skills/htmlLogo.png";
+import cssLogo from "../assets/Skills/cssLogo.png";
+import javascriptLogo from "../assets/Skills/javascriptLogo.png";
+import pythonLogo from "../assets/Skills/pythonLogo.png";
+import javaLogo from "../assets/Skills/javaLogo.png";
+import cLogo from "../assets/Skills/cLogo.png";
+import cplusLogo from "../assets/Skills/cplusLogo.png";
+import csharpLogo from "../assets/Skills/csharpLogo.png";
+import nodejsLogo from "../assets/Skills/nodejsLogo.png"; 
+import springbootLogo from "../assets/Skills/springbootLogo.png";
+import phpLogo from "../assets/Skills/php.png";
+
 //array of techList with details
 const techList = [
-  {name: "React", src:"/src/assets/Skills/react.png"},
-  {name: "React Native", src:"/src/assets/Skills/reactNative.png"},
-  {name: "HTML", src: "/src/assets/Skills/htmlLogo.png"},
-  {name: "CSS", src: "/src/assets/Skills/cssLogo.png"},  
-  {name: "JavaScript", src:"/src/assets/Skills/javascriptLogo.png"},
-  {name: "Python", src:"/src/assets/Skills/pythonLogo.png"},
-  {name: "Java", src:"/src/assets/Skills/javaLogo.png"},  
-  {name: "C", src:"/src/assets/Skills/cLogo.png"},
-  {name: "C++", src:"/src/assets/Skills/cplusLogo.png"},
-  {name: "C#", src:"/src/assets/Skills/csharpLogo.png"},
-  {name: "Node.js", src:"/src/assets/Skills/nodejsLogo.png"},
-  {name: "Spring Boot", src:"/src/assets/Skills/springbootLogo.png"},
-  {name: "PHP", src:"/src/assets/Skills/php.png"}
+  {name: "React", src:reactLogo},
+  {name: "React Native", src:reactNativeLogo},
+  {name: "HTML", src: htmlLogo},
+  {name: "CSS", src: cssLogo},  
+  {name: "JavaScript", src: javascriptLogo},
+  {name: "Python", src:pythonLogo},
+  {name: "Java", src:javaLogo},  
+  {name: "C", src:cLogo},
+  {name: "C++", src:cplusLogo},
+  {name: "C#", src:csharpLogo},
+  {name: "Node.js", src:nodejsLogo},
+  {name: "Spring Boot", src:springbootLogo},
+  {name: "PHP", src:phpLogo}
 ]
 class Skills extends Component {
   render() {

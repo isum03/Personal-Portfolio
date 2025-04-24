@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Info.css";
+
+import myPhoto from "../assets/personal/myPhoto.jpg"; // Importing the image directly
 //class based componenet info
 class Info extends Component {
   render() {
@@ -21,7 +23,7 @@ class Info extends Component {
         </div>
         {/*photo section*/}
         <div className="infoPhoto">
-          <img src="/src/assets/personal/myPhoto.jpg" alt="My Photo" className="myPhoto" />
+          <img src={myPhoto} alt="My Photo" className="myPhoto" />
         </div>
       </div>
     );
