@@ -90,5 +90,19 @@ footer {
   
 footer p {
     margin: 0;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    footer {
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+}
+  
+@media (max-width: 480px) {
+    footer {
+      padding: 1rem 0.8rem;
+      font-size: 0.85rem;
+    }
 }
   

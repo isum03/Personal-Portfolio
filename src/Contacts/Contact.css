@@ -17,8 +17,12 @@
 }
 .contactContainer p {
     font-size: 1.1rem; 
-    color: #f2dfdf; 
-    margin-bottom: 30px; 
+    color: #f2dfdf;
+    margin-bottom: 40px;
+    max-width: 600px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    line-height: 1.6;
 }
 .contactForm {
     display: flex;
@@ -28,13 +32,21 @@
 }
 .contactForm input,
 .contactForm textarea {
-    padding: 12px; 
+    padding: 12px;
     margin-bottom: 20px;
-    border: 1px ; 
-    border-radius: 5px; 
-    font-size: 1rem; 
-    background-color: #89a0a2;
+    border: none; 
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #3a3f4b; 
+    color: #fff;
+    border: 1px solid #555;
 }
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+    color: #aaa; /* Style placeholder text */
+}
+
+
 .contactForm textarea {
     height: 150px;
     resize: vertical;
@@ -76,4 +88,42 @@
 
 .GitIcon {
     color: rgb(247, 247, 247)
+}
+
+@media (max-width: 768px) {
+    .contactSection {
+      padding: 40px 0;
+    }
+    .contactContainer h2 {
+      font-size: 2.2rem;
+    }
+    .contactContainer p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+    .contactContainer {
+        padding: 15px;
+    }
+    .socialLinks a {
+        font-size: 1.6rem;
+        margin: 0 12px;
+    }
+}
+@media (max-width: 480px) {
+    .contactContainer h2 {
+      font-size: 1.8rem;
+    }
+    .contactContainer p {
+      font-size: 0.9rem;
+    }
+    .contactForm {
+        max-width: 95%; /* Allow form to be slightly wider on small screens */
+    }
+    .socialLinks a {
+        font-size: 1.5rem;
+        margin: 0 10px;
+    }
+    .socialLinks {
+         margin-top: 30px;
+    }
 }

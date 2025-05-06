@@ -1,7 +1,7 @@
 .educationContainer {
   position: relative;
   background-color: #0f111a; 
-  min-height: 500px;
+  padding: 40px 20px 80px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
   font-size: 2.5rem;
   color: rgb(255, 255, 255);
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .eduLine{
   position: absolute;
@@ -20,13 +20,13 @@
   transform: translateX(-50%);
   width: 2px;
   background-color: rgb(255, 0, 149);
+  z-index: 0;
 }
 .eduEntry{
   position: relative;
   margin-bottom: 40px;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  max-width: 900px;
 }
 .eduLineDot{
   position: absolute;
@@ -46,18 +46,19 @@
   padding: 20px;
   margin-left: 80px; 
   color: #fff; 
-  width: 40%; 
+  width: calc(50% - 40px); 
   box-sizing: border-box;
   position: relative;
+  margin-left: auto;
+  margin-right: 0;
 }
 .eduEntry:nth-child(even) .eduCard {
-  margin-left: 50%;
-  margin-right: 100px;
+  margin-right: calc(50% + 40px); 
+  margin-left: 0;
 }
-
 .eduEntry:nth-child(odd) .eduCard {
-  margin-right: 50%;
-  margin-left: 100px;
+  margin-left: calc(50% + 40px); 
+  margin-right: 0;
 }
 
 .eduCard::after {
@@ -71,13 +72,15 @@
 }
 
 .eduEntry:nth-child(even) .eduCard::after {
-  left: -10px;
+  left: 100%;
   border-right: 10px solid #f03;
+  margin-top: -10px;
 }
 
 .eduEntry:nth-child(odd) .eduCard::after {
-  right: -10px;
+  right: 100%;
   border-left: 10px solid #f03;
+  margin-top: -10px;
 }
 
 .eduTitle{
@@ -94,4 +97,66 @@
   line-height: 1.4;
 }
 
+@media(max-width: 768px) {
+  .eduTopic{
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+  }
+  .educationContainer{
+    padding: 40px 20px 60px 20px;
+  }
+  .eduLine{
+    left: 20px;
+    transform: translateX(0);
+    top: 80px;
+    bottom: 30px;
+  }
+  .eduLineDot {
+    left: 20px;
+  }
+  .eduEntry{
+    max-width: none;
+  }  
+  .eduCard{
+    width: auto; 
+    margin-left: 55px;
+    margin-right: 0;
+  }
+  .eduEntry:nth-child(odd) .eduCard,
+  .eduEntry:nth-child(even) .eduCard {
+    margin-left: 55px; 
+    margin-right: 0;
+  }
+  .eduCard::after {
+    left: -10px; 
+    right: auto;
+    border-left: none; 
+    border-right: 10px solid rgb(52, 1, 56); 
+  }
+  .eduEntry:nth-child(even) .eduCard::after {
+     border-left: none;
+     border-right: 10px solid rgb(52, 1, 56);
+     left: -10px;
+     right: auto;
+  }
+}
+@media (max-width: 480px) {
+  .eduTopic {
+   font-size: 1.8rem;
+  }
+  .eduLine {
+    left: 15px;
+  }
+   .eduLineDot {
+    left: 15px;
+  }
+   .eduCard {
+    margin-left: 40px; 
+    padding: 15px;
+  }
+  .eduEntry:nth-child(odd) .eduCard,
+  .eduEntry:nth-child(even) .eduCard {
+      margin-left: 40px; 
+  }
+}
 

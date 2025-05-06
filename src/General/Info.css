@@ -5,8 +5,10 @@
   background: #0f111a;
   color: white;
   padding: 25px 100px 200px 100px;
-  min-height: 100px;
+  min-height: auto;
   font-family: 'Segoe UI', sans-serif;
+  flex-direction: row;
+
 }
 .infoContent{
   max-width: 50%;
@@ -40,6 +42,9 @@
   transition: 0.3s ease;
   box-shadow: 0 0 15px rgba(255, 47, 197, 0.3);
   margin-top: 100px;
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 1rem;
 }
 .infoDownload:hover{
   transform: translateY(-2px);
@@ -50,9 +55,72 @@
   height: 450px;
   border-radius: 50%;
   object-fit: cover;
+  border: 8px solid #0f111a;
   
 }
 .infoPhoto{
   border-color: #ff4ecd;
   border-width: 1rem;
+}
+@media(max-width: 992px) {
+  .infoPersonal{
+    padding: 25px 50px 80px 50px;
+  }
+  .infoContent h1{
+    font-size: 3rem;
+  }
+  .infoContent p{
+    font-size: 1.5rem;
+  }
+  .myPhoto{
+    width: 350px;
+    height: 350px;
+    border-width: 6px;
+  }
+}
+@media(max-width: 768px) {
+  .infoPersonal{
+    flex-direction: column;
+    padding: 25px 50px 100px 50px;
+    text-align: center;
+  }
+  .infoContent{
+    max-width: 100%;
+    order: 2;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .infoContent h1{
+    font-size: 2.5rem;
+  }
+  .infoContent p{
+    font-size: 1.1rem;
+  }
+  .infoPhotoContainer{
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .myPhoto{
+    width: 300px;
+    height: 300px;
+    border-width: 6px;
+  }
+  .infoDownload{
+    margin-top: 30px; 
+  }
+}
+@media(max-width: 480px) {
+  .infoContent h1{
+    font-size: 2rem;
+  }
+  .infoContent p{
+    font-size: 1rem;
+  }
+  .myPhoto{
+    width: 250px;
+    height: 250px;
+  }
 }
