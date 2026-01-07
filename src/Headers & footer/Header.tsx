@@ -8,6 +8,7 @@ const Header: React.FC = () => {
       <nav className="navbar">
         {/*navigation bar with links*/}
         <a href="#myself">My-Self</a>
+        <a href="#work">Work Experience</a>
         <a href="#edu">Education</a>
         <a href="#project">Projects</a>
         <a href="#skills">Tech-Stack</a>

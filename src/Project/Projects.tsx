@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./project.css";
 
+import img0 from "../assets/projects/img0.png";
 import img1 from "../assets/projects/img1.png";
 import img2 from "../assets/projects/img2.png"; 
 import img3 from "../assets/projects/img3.png";
@@ -9,6 +10,13 @@ import img5 from "../assets/projects/img5.png";
 
 //array containing project details
 const projectDetails = [
+  {
+    title: "GunDwon Game",
+    image: img0,
+    tech: "Tech Stack : Python",
+    description: "Developed a Python number grid guessing game with file handling for persistent data storage",
+    github: "https://github.com/isum03/Gundown-Game"
+  },
   {
     title: "Financial CRM System",
     image: img1,

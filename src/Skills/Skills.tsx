@@ -14,6 +14,7 @@ import csharpLogo from "../assets/Skills/csharpLogo.png";
 import nodejsLogo from "../assets/Skills/nodejsLogo.png"; 
 import springbootLogo from "../assets/Skills/springbootLogo.png";
 import phpLogo from "../assets/Skills/php.png";
+import dotnetLogo from "../assets/Skills/dotnetLogo.png";
 
 //array of techList with details
 const techList = [
@@ -29,7 +30,8 @@ const techList = [
   {name: "C#", src:csharpLogo},
   {name: "Node.js", src:nodejsLogo},
   {name: "Spring Boot", src:springbootLogo},
-  {name: "PHP", src:phpLogo}
+  {name: "PHP", src:phpLogo},
+  {name: ".NET", src:dotnetLogo},
 ]
 class Skills extends Component {
   render() {

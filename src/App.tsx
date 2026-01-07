@@ -7,6 +7,7 @@ import Projects from './Project/Projects'
 import Footer from "./Headers & footer/Footer";
 import Contact from "./Contacts/Contact";
 import Header from "./Headers & footer/Header";
+import Work from "./Work/Work";
 
 import "font-awesome/css/font-awesome.min.css";
 
@@ -15,6 +16,7 @@ const App = () => {
     <div className="mainContent">
       <Header />
       <Info />
+      <Work />
       <Education />
       <Projects />
       <Skills />
